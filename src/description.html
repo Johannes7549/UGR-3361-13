@@ -5,166 +5,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Description</title>
-</head>
-<body>
-    <header aria-label="header">
-        <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website" >
-            <nav aria-label="navigation">
-                <a href="">Home</a>
-                <a href="">Software Products</a>
-                <a href="">Electronic Products</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
-            <div>
-                <p>&lt;</p>
-            </div>
-            <div >
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
-            <div>
-                <p>&gt;</p>
-            </div>
-            <div>
-                <img src="Images/Icons/menu.png" alt="Menu bar for navigation" aria-label="Menu">
-            </div>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="footer.css">
+
+  </head>
+
+<body onload="getid()">
+  <header aria-label="header">
+      <div class="header">
+        <div class="header__logo_container"><img src="Images/Icons/logo.png" alt="Logo of the website" class="header__logo" /></div>
+        <nav aria-label="navigation" class="header__navigation">
+          <div><a href="Index.html">Home</a></div>
+          <div><a href="software_products.html">Software Products</a></div>
+          <div><a href="electonic_products.html">Electronic Products</a></div>
+          <div><a href="about_us.html">About Us</a></div>
+          <div><a href="contact_us.html">Contact</a></div>
+        </nav>
+        <h1 class="header__welcome">Welcome,</h1>
+        <div class="header__hamburger">
+          <img
+            src="Images/Icons/menu.png"
+            alt="Menu bar for navigation"
+            aria-label="Menu" class="header__hamburgermenu" hidden="true" 
+          />
         </div>
-    </header>
-    <main>
+      </div>
+  </header>
+  <main>
         <section>
-            <div>
-                <h1>Online blood bank management system</h1>
+            <div class="description">
+                <h1 id="title">Online blood bank management system</h1>
+                <div class="paragraph_description">
+                    <p id="paragraph">This is an online blood bank management system that helps in managing various blood bank operations effectively. 
+                    The project consists of a central depository containing various blood deposits available along with associated details. 
+                    These details include blood type, storage area and date of storage. Maintenance and the monitoring of blood deposits become 
+                    easy with the help of this system. The project is an online system that provides an option to check the availability of the 
+                    required blood group within the blood bank. Moreover, the system also has added features such as patient name and contacts, 
+                    blood booking and requirement of blood group is posted on the website to find available donors for a blood emergency. 
+                    This online system is developed on .net platform and supported by an Sql database to store blood and user specific details.
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="imageholder">
+                <div class="singleimage">
+                    <img src="Images/Products/product10.jpg" alt="Blood bank management tool" class="singleimage__image1">
+                </div>
                 <div>
-                    <p>This is an online blood bank management system that helps in managing various blood bank operations effectively. <br>
-                    The project consists of a central depository containing various blood deposits available along with associated details. <br>
-                    These details include blood type, storage area and date of storage. Maintenance and the monitoring of blood deposits become <br>
-                    easy with the help of this system. The project is an online system that provides an option to check the availability of the <br>
-                    required blood group within the blood bank. Moreover, the system also has added features such as patient name and contacts, <br>
-                    blood booking and requirement of blood group is posted on the website to find available donors for a blood emergency. <br>
-                    This online system is developed on .net platform and supported by an Sql database to store blood and user specific details.</p>
+                    <img src="Images/Products/product11.jpg" alt="Blood bank management system" class="singleimage__image2">
                 </div>
             </div>
         </section>
         <section>
             <div>
-                <div>
-                    <img src="Images/Products/product10.jpg" alt="Blood bank management tool">
-                </div>
-                <div>
-                    <img src="Images/Products/product11.jpg" alt="Blood bank management system">
-                </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <table>
-                    <tr>
-                        <th>Advantages</th>
-                        <th>Disadvantages</th>
+                <table class="content_table">
+                    <thead>
+                      <tr>
+                        <th id="thead1">Advantages</th>
+                        <th is="thead2">Disadvantages</th>
                     </tr>
-                    <tr>
-                        <th>Encourages blood donors to donate.</th>
-                        <th>Does not keep track of big data.</th>
-                    </tr>
-                    <tr>
-                        <th>Helps people find blood donors in times of need.</th>
-                    </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td id="td1">Encourages blood donors to donate.</td>
+                        <td id="td2">Does not keep track of big data.</td>
+                      </tr>
+                      <tr>
+                          <td id="td3">Helps people find blood donors in times of need.</td>
+                          <td id="td4">Do not easily available</td>
+                      </tr>
+                    </tbody>
                 </table>
             </div>
         </section>
         <section>
-            <div>
-                <h1>Related Products</h1>
-                <a href="">
-                    <div class="product">
-                        <img src="Images/Products/product1.jpg" alt="Core i7 hp laptop">
-                        <div class="description"><p>Laptop </p></div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="product">
-                        <img src="Images/Products/product1.jpg" alt="Headphone with doubly sound system">
-                        <div class="description"><p>Headphone</p></div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="product">
-                        <img src="Images/Products/product1.jpg" alt="simple watch for clocking purpose">
-                        <div class="description"><p>Watch</p></div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="product">
-                        <img src="Images/Products/product1.jpg" alt="Smart watch which includes the ability to measute body temperature">
-                        <div class="description"><p>Smart Watch</p></div>
-                    </div>
-                </a>
+            <div class="background">
+              <h1>Related Products</h1>
+                <div class="products">
+                   <a href="description.html?id=25">
+                        <div class="product">
+                            <img src="Images/Products/product21.jpg" alt="Wireless Doorbell Calling System" class="image_product">
+                            <div><p>Wireless Doorbell Calling System</p></div>
+                        </div>
+                    </a>
+                    <a href="description.html?id=26">
+                        <div class="product">
+                            <img src="Images/Products/product22.jpg" alt="Smart Burglar Alarm" class="image_product">
+                            <div><p>Smart Burglar Alarm</p></div>
+                        </div>
+                    </a>
+                    <a href="description.html?id=27">
+                        <div class="product">
+                            <img src="Images/Products/product23.jpg" alt="Wireless FM Transmitter Mic" class="image_product">
+                            <div><p>Wireless FM Transmitter Mic</p></div>
+                        </div>
+                    </a>
+                    <a href="description.html?id=28">
+                        <div class="product">
+                            <img src="Images/Products/product24.jpg" alt="Overvoltage And Undervoltage Protection" class="image_product">
+                            <div><p>Overvoltage And Undervoltage Protection System</p></div>
+                        </div>
+                    </a>
+            </div>
             </div>
         </section>
-    </main>
-     <footer aria-label="footer">
-      <div>
+  </main>
+  <footer aria-label="footer">
+      <div class="footer">
         <section>
-          <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website" />
+          <div class="footer__logosection">
+            <img src="Images/Icons/logo.png" alt="Logo of the website" class="footer__logofooter"/>
           </div>
         </section>
         <section>
-          <div>
-            <div>
+          <div class="socialmedias">
+            <div class="socialmedia">
               <a href="https://twitter.com/MathiJo1">
-                <img src="Images/Icons/twitter-sign.png" alt="Twitter" />
+                <img src="Images/Icons/twitter-sign.png" alt="Twitter" class="socialmedia__image" />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://www.instagram.com/prime12961/">
-                <img src="Images/Icons/instagram.png" alt="Instagram" />
+                <img src="Images/Icons/instagram.png" alt="Instagram" class="socialmedia__image"  />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://t.me/JoyeJohn">
-                <img src="Images/Icons/telegram.png" alt="Telegram" />
+                <img src="Images/Icons/telegram.png" alt="Telegram" class="socialmedia__image" />
               </a>
             </div>
-            <div class="facebook_container">
+            <div class="socialmedia">
               <a href="https://www.facebook.com/johnny.1158/">
                 <img
                   src="Images/Icons/facebook-app-symbol.png"
                   alt="Facebook"
+                  class="socialmedia__image" 
                 />
               </a>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <div>
-              <div>
-                  <p>&#128222;</p>
-                  <p>+251918076769</p>
+          <div class="address">
+            <div class="address__1">
+              <div class="phone">
+                  <div><p>&#128222;</p></div>
+                  <div><p>+251918076769</p></div>
+                </a>
               </div>
-              <div>
-                <a href="https://mail.google.com/mail/u/0/#inbox">
-                  <p>&#128231;</p>
-                  <p>yohannesbekele107@gmail.com</p>
+              <div class="email">
+                <a href="https://mail.google.com/mail/u/0/#inbox" >
+                  <div class="email__container">
+                    <div><p>&#128231;</p></div>
+                    <div><p>yohannesbekele107@gmail.com</p></div>
+                  </div>
                 </a>
               </div>
             </div>
-            <div>
-              <h2>Address</h2>
+            <div class="address__2">
+              <div><h2>Address</h2></div>
               <div>
                 <p>You can in Bole, Addis Ababa, Ethiopia</p>
               </div>
             </div>
-            <nav>
+            <nav class="address__3">
               <div>
                 <ul>
-                  <li>
-                    <a href="home.html">Home</a>
-                  </li>
                   <li>
                     <a href="software_products.html">Software Products</a>
                   </li>
@@ -178,10 +185,11 @@
             </nav>
           </div>
         </section>
-        <div>
+        <div class="copyright">
           <p>&#169; Johnny Multiple Solutions 2022</p>
         </div>
       </div>
-    </footer>
+  </footer>
+  <script src="description.js"></script>
 </body>
 </html>

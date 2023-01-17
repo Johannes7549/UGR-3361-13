@@ -5,221 +5,194 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="software_products.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-   <header aria-label="header">
-    <h1>Welcome</h1>
-        <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website">
-            <nav aria-label="navigation">
-                <a href="">Home</a>
-                <a href="">Software Products</a>
-                <a href="">Electronic Products</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
-            <div>
-                <p>&lt;</p>
-            </div>
-            <div>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
-            <div>
-                <p>&gt;</p>
-            </div>
-            <div>
-                <img src="Images/Icons/menu.png" alt="Menu bar for navigation" aria-label="Menu">
-            </div>
+    <header aria-label="header">
+      <div class="header">
+        <div class="header__logo_container"><img src="Images/Icons/logo.png" alt="Logo of the website" class="header__logo" /></div>
+        <nav aria-label="navigation" class="header__navigation">
+          <div><a href="Index.html">Home</a></div>
+          <div><a href="software_products.html">Software Products</a></div>
+          <div><a href="electonic_products.html">Electronic Products</a></div>
+          <div><a href="about_us.html">About Us</a></div>
+          <div><a href="contact_us.html">Contact</a></div>
+        </nav>
+        <h1 class="header__welcome">Welcome,</h1>
+        <div class="header__hamburger">
+          <img
+            src="Images/Icons/menu.png"
+            alt="Menu bar for navigation"
+            aria-label="Menu" class="header__hamburgermenu" hidden="true" 
+          />
         </div>
-    </header>
+      </div>
+   </header>
     <main>
-        <div>
+        <div class="products">
             <section>
                 <h2>Web Based Systems</h2>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product1.jpg" alt="Organization Finance Tracking System">
-                        <div><p>Organization Finance Tracking System using Blockchain </p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product2.jpg" alt="Website Vulnerability Scanning">
-                        <div><p>Website Vulnerability Scanning System</p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product3.jpg" alt="Online Fuel Delivery Flutter App">
-                        <div><p>Online Fuel Delivery Flutter App</p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product4.jpg" alt="Patient Data Management System">
-                        <div><p>Patient Data Management System using Blockchain</p></div>
-                    </div>
-                </a>
-                <div>
-                    <p>&lt;</p>
-                </div>
-                <div>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-                <div>
-                    <p>&gt;</p>
+                <div class="webbasedsystem_products">
+                  <a href="description.html?id=1">
+                      <div class="product">
+                          <img src="Images/Products/product1.jpg" alt="Organization Finance Tracking System" class="image_product">
+                          <div><p>Organization Finance Tracking </p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=2">
+                      <div class="product">
+                          <img src="Images/Products/product2.jpg" alt="Website Vulnerability Scanning" class="image_product">
+                          <div><p>Website Vulnerability</p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=3">
+                      <div class="product">
+                          <img src="Images/Products/product3.jpg" alt="Online Fuel Delivery Flutter App" class="image_product">
+                          <div><p>Online Fuel Delivery</p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=4">
+                      <div class="product">
+                          <img src="Images/Products/product4.jpg" alt="Patient Data Management System" class="image_product">
+                          <div><p>Patient Data Management</p></div>
+                      </div>
+                  </a>
                 </div>
             </section>
             <section>
                 <h2>Artificial Intelligence</h2>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product2.jpg" alt="Smart Time Table Generation Flutter App">
-                        <div><p>Smart Time Table Generation Flutter App Using Genetic Algorithm</p></div>
+                <div class="ai_products">
+                  <a href="description.html?id=9">
+                    <div class="product">
+                        <img src="Images/Products/product2.jpg" alt="Smart Time Table Generation Flutter App" class="image_product">
+                        <div><p>Smart Time Table </p></div>
                     </div>
-                </a>
-                 <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product6.jpg" alt="Dental Caries Detection System">
-                        <div><p>Dental Caries Detection System using Python</p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product2.jpg" alt="Speech Emotion Detection System">
-                        <div><p>Speech Emotion Detection System using Python</p></div>
-                    </div>
-                </a>
-                 <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product6.jpg" alt="Leaf Detection System">
-                        <div><p>Leaf Detection System using OpenCV Python</p></div>
-                    </div>
-                </a>
-                <div>
-                    <p>&lt;</p>
-                </div>
-                <div >
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-                <div>
-                    <p>&gt;</p>
+                  </a>
+                  <a href="description.html?id=10">
+                      <div class="product">
+                          <img src="Images/Products/product6.jpg" alt="Dental Caries Detection System" class="image_product">
+                          <div><p>Dental Caries Detection</p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=11">
+                      <div class="product">
+                          <img src="Images/Products/product2.jpg" alt="Speech Emotion Detection System" class="image_product">
+                          <div><p>Speech Detection </p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=12">
+                      <div class="product">
+                          <img src="Images/Products/product6.jpg" alt="Leaf Detection System" class="image_product">
+                          <div><p>Leaf Detection</p></div>
+                      </div>
+                  </a>
                 </div>
             </section>
             <section>
-                <h3>Data Science</h3>
-                 <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product3.jpg" alt="Movie Success Prediction System">
-                        <div><p>Movie Success Prediction System using Python</p></div>
+                <h2>Data Science</h2>
+                <div class="datascience_products">
+                  <a href="description.html?id=13">
+                    <div class="product">
+                        <img src="Images/Products/product3.jpg" alt="Movie Success Prediction System" class="image_product">
+                        <div><p>Movie Success</p></div>
                     </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product3.jpg" alt="Speech Emotion Detection System">
-                        <div><p>Speech Emotion Detection System using Python</p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product3.jpg" alt="Blockchain based Loan Management System">
-                        <div><p>Blockchain based Loan Management System with Smart Contracts</p></div>
-                    </div>
-                </a>
-                <a href="description.html">
-                    <div>
-                        <img src="Images/Products/product3.jpg" alt="Movie Success Prediction System">
-                        <div><p>Movie Success Prediction System using Python</p></div>
-                    </div>
-                </a>
-                <div>
-                    <p>&lt;</p>
-                </div>
-                <div>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                </div>
-                <div>
-                    <p>&gt;</p>
+                  </a>
+                  <a href="description.html?id=14">
+                      <div class="product">
+                          <img src="Images/Products/product3.jpg" alt="Speech Emotion Detection System" class="image_product">
+                          <div><p>Speech Detection</p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=15">
+                      <div class="product">
+                          <img src="Images/Products/product3.jpg" alt="Blockchain based Loan Management System" class="image_product">
+                          <div><p>Blockchain based Loan</p></div>
+                      </div>
+                  </a>
+                  <a href="description.html?id=16">
+                      <div class="product">
+                          <img src="Images/Products/product3.jpg" alt="Movie Success Prediction System" class="image_product">
+                          <div><p>Movie Prediction</p></div>
+                      </div>
+                  </a>
                 </div>
             </section>
         </div>
     </main>
     <section>
-        <div>
-            <p>These Software products are designed by us and different  companies. <br>
-            We are happy to promote these products for you. By taking a look at these systems <br>
-            , you can realize that our country is on the verge developing and people are <br>
+        <div class="description">
+            <p>These Software products are designed by us and different  companies. 
+            We are happy to promote these products for you. By taking a look at these systems 
+            , you can realize that our country is on the verge developing and people are 
             practing this digitalized world.
             </p>
         </div>
     </section>
-     <footer aria-label="footer">
-      <div>
+    <footer aria-label="footer">
+      <div class="footer">
         <section>
-          <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website" />
+          <div class="footer__logosection">
+            <img src="Images/Icons/logo.png" alt="Logo of the website" class="footer__logofooter"/>
           </div>
         </section>
         <section>
-          <div>
-            <div>
+          <div class="socialmedias">
+            <div class="socialmedia">
               <a href="https://twitter.com/MathiJo1">
-                <img src="Images/Icons/twitter-sign.png" alt="Twitter" />
+                <img src="Images/Icons/twitter-sign.png" alt="Twitter" class="socialmedia__image" />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://www.instagram.com/prime12961/">
-                <img src="Images/Icons/instagram.png" alt="Instagram" />
+                <img src="Images/Icons/instagram.png" alt="Instagram" class="socialmedia__image"  />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://t.me/JoyeJohn">
-                <img src="Images/Icons/telegram.png" alt="Telegram" />
+                <img src="Images/Icons/telegram.png" alt="Telegram" class="socialmedia__image" />
               </a>
             </div>
-            <div class="facebook_container">
+            <div class="socialmedia">
               <a href="https://www.facebook.com/johnny.1158/">
                 <img
                   src="Images/Icons/facebook-app-symbol.png"
                   alt="Facebook"
+                  class="socialmedia__image" 
                 />
               </a>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <div>
-              <div>
-                  <p>&#128222;</p>
-                  <p>+251918076769</p>
+          <div class="address">
+            <div class="address__1">
+              <div class="phone">
+                  <div><p>&#128222;</p></div>
+                  <div><p>+251918076769</p></div>
+                </a>
               </div>
-              <div>
-                <a href="https://mail.google.com/mail/u/0/#inbox">
-                  <p>&#128231;</p>
-                  <p>yohannesbekele107@gmail.com</p>
+              <div class="email">
+                <a href="https://mail.google.com/mail/u/0/#inbox" >
+                  <div class="email__container">
+                    <div><p>&#128231;</p></div>
+                    <div><p>yohannesbekele107@gmail.com</p></div>
+                  </div>
                 </a>
               </div>
             </div>
-            <div>
-              <h3>Address</h3>
+            <div class="address__2">
+              <div><h2>Address</h2></div>
               <div>
                 <p>You can in Bole, Addis Ababa, Ethiopia</p>
               </div>
             </div>
-            <nav>
+            <nav class="address__3">
               <div>
                 <ul>
                   <li>
-                    <a href="home.html">Home</a>
+                    <a href="Index.html">Home</a>
                   </li>
                   <li>
                     <a href="software_products.html">Software Products</a>
@@ -234,10 +207,12 @@
             </nav>
           </div>
         </section>
-        <div>
+        <div class="copyright">
           <p>&#169; Johnny Multiple Solutions 2022</p>
         </div>
       </div>
     </footer>
+    <script src="description.js"></script>
+      <script src="navigation.js"></script>
 </body>
 </html>

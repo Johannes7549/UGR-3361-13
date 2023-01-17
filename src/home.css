@@ -1,0 +1,240 @@
+/*description section*/
+.intro{
+    display: grid;
+    grid-template-columns: 45vw 25vw;
+    padding: 4vw;
+    gap: 10vw;
+    margin-left: 5vw;
+    margin-right: 2vw;
+}
+.description_image{
+    width: 20vw;
+    height: 15vw;
+    object-fit: cover;
+    object-position: center;
+}
+.p_description{
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    padding: 0.5vw;
+}
+.video{
+    width: 25vw;
+    height: 15vw;
+    
+}
+.video_description{
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.paragraph_description{
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    margin-left: 1vw;
+}
+@media all and (max-width:1100px){
+    .intro{
+        grid-template-columns: 50vw 30vw;
+        padding: 0;
+        gap: 5vw;
+        
+    }
+    .description_image{
+        width: 25vw;
+        height: 25vw;
+        margin-left: 0vw;
+
+    }
+    .video{
+        width: 25vw;
+        height: 20vw; 
+}
+}
+@media all and (max-width:900px){
+
+    .intro{
+        grid-template-columns: 60vw 30vw;
+        padding: 0;
+        gap: 3vw;
+       
+        
+    }
+    .description_image{
+        width: 35vw;
+        height: 35vw;
+
+    }
+    .video{
+        width: 30vw;
+        height: 35vw;   
+}
+    .paragraph_description{
+        width: 35vw;
+        font-size: 2vw;
+
+    }
+}
+@media all and (max-width:790px){
+    .intro{
+        grid-template-columns: 80vw;
+        padding: 2vw;
+        gap: 2vw;
+       
+        
+    }
+    .p_description{
+        flex-direction: column;
+        margin-left: 6vw;
+        margin-bottom: 8vw;
+    }
+    .description_image{
+        width: 70vw;
+        height: 40vw;
+        margin-left: 2vw;
+
+    }
+    .video{
+        width: 70vw;
+        height: 40vw;  
+        margin-left: 6vw; 
+    }
+    .paragraph_description{
+        width: 60vw;
+        margin-left: 7vw;
+        font-size: 3.5vw;
+
+    }
+}
+/*products sections*/
+ body{
+    margin: 0;
+}
+.products{
+    background-color: antiquewhite;
+}
+.products a{
+    text-decoration: none;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+.software_products,
+.electronic_products{
+    display: grid;
+    grid-template-columns: 14vw 14vw 14vw 14vw;
+    gap: 10vw;
+    margin-left: 6.5vw;
+
+}.software_products{
+    margin-bottom: 4vw;
+}
+.product{
+    background-color: rgb(99, 97, 97);
+    height: 30vw;
+    border-radius: 2vw 2vw 2vw 2vw;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.product:hover{
+    opacity: 0.8;
+}
+
+.image_product{
+    width: 14vw;
+    height: 18vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vw 2vw 0 0;
+
+}
+.product p{
+   width: 12vw;
+   margin-top: 2vw;
+   margin-left: 2vw;
+   color: white;
+}
+@media all and (max-width:1000px){
+    .software_products,
+    .electronic_products{
+        grid-template-columns: 22vw 22vw;
+        margin-left: 20vw;
+    }
+    .image_product{
+        width: 22vw;
+        height: 28vw;
+    }
+    .product p{
+        width: 17vw;
+        margin-left: 4vw;
+    }
+    .product{
+        height: 40vw;
+        
+    }
+}
+@media all and (max-width:800px){
+    .software_products,
+    .electronic_products{
+        grid-template-columns: 50vw;
+        margin-left: 23vw;
+    }
+    .image_product{
+        width: 50vw;
+        height: 45vw;
+        border-radius: 6vw 6vw 0 0;
+    }
+    .product p{
+        width: 40vw;
+        margin-top: 8vw;
+        margin-left: 7vw;
+    }
+    .product{
+        height: 80vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+    }
+}
+/*sponosors section*/
+.sponsors{
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    gap: 10vw;
+    margin-left: 27vw;
+    margin-top: 4vw;
+    
+}
+.sponsor{
+    width: 20vw;
+    display: flex;
+    margin-top: 4vw;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: beige;
+
+}
+.sponsor p{
+    margin-left: 4Svw;
+    margin-bottom: 0;
+}
+.sponsor_lists{
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 5vw;
+
+}
+@media all and (max-width:600px){
+    .sponsors{
+        grid-template-columns: 60vw;
+        margin-left: 20vw;
+    }
+    .sponsor{
+        padding: 1vw;
+        width: 60vw;
+        display: flex;
+        margin-top: 0;
+}
+    .sponsor_lists{
+        width: 50vw;
+        height: 20vw;
+        margin-left: 4vw;
+    }
+} 

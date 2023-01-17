@@ -1,0 +1,113 @@
+/* products list section*/
+body{
+    margin: 0;
+}
+.products{
+    background-color: antiquewhite;
+    padding-top: 2vw;
+}
+.products h2{
+    margin-left: 42vw;
+    margin-top: 5vw;
+}
+.products a{
+    text-decoration: none;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+.webbasedsystem_products,
+.ai_products,
+.datascience_products{
+    display: grid;
+    grid-template-columns: 14vw 14vw 14vw 14vw;
+    gap: 10vw;
+    margin-left: 6.5vw;
+
+}
+.webbasedsystem_products{
+    margin-bottom: 4vw;
+}
+.product{
+    background-color: rgb(99, 97, 97);
+    height: 30vw;
+    border-radius: 2vw 2vw 2vw 2vw;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.product:hover{
+    opacity: 0.8;
+}
+
+.image_product{
+    width: 14vw;
+    height: 18vw;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2vw 2vw 0 0;
+
+}
+.product p{
+   width: 12vw;
+   margin-top: 2vw;
+   margin-left: 2vw;
+   color: white;
+}
+@media all and (max-width:1000px){
+    .webbasedsystem_products,
+    .ai_products,
+    .datascience_products{
+        grid-template-columns: 22vw 22vw;
+        margin-left: 20vw;
+    }
+    .image_product{
+        width: 22vw;
+        height: 28vw;
+    }
+    .product p{
+        width: 17vw;
+        margin-left: 4vw;
+    }
+    .product{
+        height: 40vw;
+        
+    }
+}
+@media all and (max-width:800px){
+    .webbasedsystem_products,
+    .ai_products,
+    .datascience_products{
+        grid-template-columns: 50vw;
+        margin-left: 23vw;
+    }
+    .image_product{
+        width: 50vw;
+        height: 45vw;
+        border-radius: 6vw 6vw 0 0;
+    }
+    .product p{
+        width: 40vw;
+        margin-top: 8vw;
+        margin-left: 7vw;
+    }
+    .product{
+        height: 80vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+    }
+    .products h2{
+        margin-left: 30vw;
+    }
+    .products{
+        padding-bottom: 50vw;
+    }
+
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    margin: 3vw;
+
+}
+.description p{
+    width: 60vw;
+}

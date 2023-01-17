@@ -5,161 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About_us</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <header aria-label="header">
-        <h1>Welocme</h1>
-        <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website">
-            <nav aria-label="navigation">
-                <a href="">Home</a>
-                <a href="">Software Products</a>
-                <a href="">Electronic Products</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
-            <div>
-                <p>&lt;</p>
-            </div>
-            <div>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
-            <div>
-                <p>&gt;</p>
-            </div>
-            <div>
-                <img src="Images/Icons/menu.png" alt="Menu bar for navigation" aria-label="Menu">
-            </div>
+      <div class="header">
+        <div class="header__logo_container"><img src="Images/Icons/logo.png" alt="Logo of the website" class="header__logo" /></div>
+        <nav aria-label="navigation" class="header__navigation">
+          <div><a href="Index.html">Home</a></div>
+          <div><a href="software_products.html">Software Products</a></div>
+          <div><a href="electonic_products.html">Electronic Products</a></div>
+          <div><a href="about_us.html">About Us</a></div>
+          <div><a href="contact_us.html">Contact</a></div>
+        </nav>
+        <h1 class="header__welcome">Welcome,</h1>
+        <div class="header__hamburger">
+          <img
+            src="Images/Icons/menu.png"
+            alt="Menu bar for navigation"
+            aria-label="Menu" class="header__hamburgermenu" hidden="true" 
+          />
         </div>
-    </header>
+      </div>
+   </header>
     <div>
-        <h2>About Us</h2>
+        <h2 class="intro">About Us</h2>
     </div>
-    <h3>Here are our previous works</h3>
+    <h3 class="intro">Here are our previous and current works</h3>
     <main >
-        <div>
-            <div>
-                <h4>Heading 1</h4>
-                <h5>Heading 2</h5>
-                <div>
-                    <p>Description about work 1</p>
+        <div class="works">
+            <div class="works__work">
+                <h4>Quantum computing</h4>
+                <div class="works__work__p">
+                    <p>We are working on the development and promotion of Quantum computer </p>
                 </div>
                 <div>
-                    <img src="" alt="" class="work">
-                </div>
-            </div>
-            <div >
-                <h4>Heading 1</h4>
-                <h5>Heading 2</h5>
-                <div>
-                    <p>Description about work 2</p>
-                </div>
-                <div>
-                    <img src="" alt="" class="work">
+                    <img src="images/Header/Header1.jpg" alt="work one image description" class="work__image">
                 </div>
             </div>
-            <div>
-                <h4>Heading 1</h4>
-                <h5>Heading 2</h5>
-                <div>
-                    <p>Description about work 3</p>
+            <div class="works__work">
+                <h4>Computer selling and barter</h4>
+                <div class="works__work__p">
+                    <p>We have done computer selling sites and bartering softwares and facilitated online market and bartering techniques</p>
                 </div>
                 <div>
-                    <img src="" alt="">
+                    <img src="images/Header/Header2.jpg" alt="computer selling and barter" class="work__image">
+                </div>
+            </div>
+            <div class="works__work">
+                <h4>API and e-learning</h4>
+                <div class="works__work__p">
+                    <p> We are working on our e-learing software to make courses available on our site. we are also working on high level API development.</p>
+                </div>
+                <div>
+                    <img src="images/Header/Header3.jpg" alt="api development and e-learing" class="work__image">
                 </div>
             </div>
         </div>
     </main>
-    <section>
-        <div>
-            <h3>Why choosing Us?</h3>
-            <div>
-                <p>&lt;</p>
-            </div>
-            <div>
-                <h4>Heading</h4>
-                <div>
-                    <div><p>The first reason which explains why our site has to be choosen</p></div>
-                </div>
-            </div>
-            <div>
-                <h4>Heading</h4>
-                <div>
-                    <div><p>The second reason which explains why our site has to be choosen</p></div>
-                </div>
-            </div>
-            <div>
-                <h4>Heading</h4>
-                <div>
-                    <div><p>The third reason which explains why our site has to be choosen</p></div>
-                </div>
-            </div><div>
-                <p>&gt;</p>
-            </div>
-
-        </div>
-    </section>
     <footer aria-label="footer">
-      <div>
+      <div class="footer">
         <section>
-          <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website" />
+          <div class="footer__logosection">
+            <img src="Images/Icons/logo.png" alt="Logo of the website" class="footer__logofooter"/>
           </div>
         </section>
         <section>
-          <div>
-            <div>
+          <div class="socialmedias">
+            <div class="socialmedia">
               <a href="https://twitter.com/MathiJo1">
-                <img src="Images/Icons/twitter-sign.png" alt="Twitter" />
+                <img src="Images/Icons/twitter-sign.png" alt="Twitter" class="socialmedia__image" />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://www.instagram.com/prime12961/">
-                <img src="Images/Icons/instagram.png" alt="Instagram" />
+                <img src="Images/Icons/instagram.png" alt="Instagram" class="socialmedia__image"  />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://t.me/JoyeJohn">
-                <img src="Images/Icons/telegram.png" alt="Telegram" />
+                <img src="Images/Icons/telegram.png" alt="Telegram" class="socialmedia__image" />
               </a>
             </div>
-            <div class="facebook_container">
+            <div class="socialmedia">
               <a href="https://www.facebook.com/johnny.1158/">
                 <img
                   src="Images/Icons/facebook-app-symbol.png"
                   alt="Facebook"
+                  class="socialmedia__image" 
                 />
               </a>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <div>
-              <div>
-                  <p>&#128222;</p>
-                  <p>+251918076769</p>
+          <div class="address">
+            <div class="address__1">
+              <div class="phone">
+                  <div><p>&#128222;</p></div>
+                  <div><p>+251918076769</p></div>
+                </a>
               </div>
-              <div>
-                <a href="https://mail.google.com/mail/u/0/#inbox">
-                  <p>&#128231;</p>
-                  <p>yohannesbekele107@gmail.com</p>
+              <div class="email">
+                <a href="https://mail.google.com/mail/u/0/#inbox" >
+                  <div class="email__container">
+                    <div><p>&#128231;</p></div>
+                    <div><p>yohannesbekele107@gmail.com</p></div>
+                  </div>
                 </a>
               </div>
             </div>
-            <div>
-              <h3>Address</h3>
+            <div class="address__2">
+              <div><h2>Address</h2></div>
               <div>
                 <p>You can in Bole, Addis Ababa, Ethiopia</p>
               </div>
             </div>
-            <nav>
+            <nav class="address__3">
               <div>
                 <ul>
                   <li>
-                    <a href="home.html">Home</a>
+                    <a href="Index.html">Home</a>
                   </li>
                   <li>
                     <a href="software_products.html">Software Products</a>
@@ -174,10 +142,11 @@
             </nav>
           </div>
         </section>
-        <div>
+        <div class="copyright">
           <p>&#169; Johnny Multiple Solutions 2022</p>
         </div>
       </div>
     </footer>
+      <script src="navigation.js"></script>
 </body>
 </html>

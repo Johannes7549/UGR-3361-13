@@ -5,130 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
-    <header aria-label="header">
-        <h1>Welocme</h1>
-        <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website">
-            <nav aria-label="navigation">
-                <a href="">Home</a>
-                <a href="">Software Products</a>
-                <a href="">Electronic Products</a>
-                <a href="">About Us</a>
-                <a href="">Contact</a>
-            </nav>
-            <div>
-                <p>&lt;</p>
-            </div>
-            <div>
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-            </div>
-            <div>
-                <p>&gt;</p>
-            </div>
-            <div>
-                <img src="Images/Icons/menu.png" alt="Menu bar for navigation" aria-label="Menu">
-            </div>
+
+  <header aria-label="header">
+      <div class="header">
+        <div class="header__logo_container"><img src="Images/Icons/logo.png" alt="Logo of the website" class="header__logo" /></div>
+        <nav aria-label="navigation" class="header__navigation">
+          <div><a href="Index.html">Home</a></div>
+          <div><a href="software_products.html">Software Products</a></div>
+          <div><a href="electonic_products.html">Electronic Products</a></div>
+          <div><a href="about_us.html">About Us</a></div>
+          <div><a href="contact_us.html">Contact</a></div>
+        </nav>
+        <h1 class="header__welcome">Welcome,</h1>
+        <div class="header__hamburger">
+          <img
+            src="Images/Icons/menu.png"
+            alt="Menu bar for navigation"
+            aria-label="Menu" class="header__hamburgermenu" hidden="true" 
+          />
         </div>
-    </header>
-    <section>
-        <div>
-            <form action="post">
-                <label for="fname">First Name</label>
-                <label for="lname">Last Name</label><br>
-                <input type="text" name="fname" id="fname">
-                <input type="text" name="lname" id="lname"><br>
-                <label for="email" id="email">Email</label><br>
-                <input type="text" name="email" class="email" id="email"><br>
-                <label for="message">Message</label><br>
-                <input type="text" id="message"><br>
-                <label for="additional_details">Additional Details</label><br>
-                <input type="text" name="additional_text" id="additional_details"><br>
-                <button class="submit_buton">Submit</button><br>
+      </div>
+   </header>
+  <div class="main">
+    <section class="sectionform">
+        <div class="form_container">
+            <form>
+                <label for="fname" class="label_name" id="name_">Name</label>
+                <input type="text" name="name" id="name">
+                <span></span>
+                <label for="email" id="email_" class="label_email">Email</label>
+                <input type="text" name="email" class="email" id="email"><span></span>
+                <label for="message" class="label_message" id="message">Message</label>
+                <input type="text" id="message_"><span></span>
+                <label for="additional_details" class="label_additionaldetails" id="additonaldetails_">Additional Details</label>
+                <input type="text" name="additional_text" id="additional_details"><span></span><br>
+                <input type="submit" class="submit_button" name="submit">
              </form>
         </div>
     </section>
     <section>
-        <div >
-            <div aria-label="location">
-                <div>
+        <div class="location_container">
+            <div aria-label="location" class="location">
+                <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.708200167928!2d38.78489891377996!3d8.998975093541697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b85e566370f2f%3A0x1e5c52f1dd1647da!2zQWxlbW5lc2ggUGxhemEgfCBCb2xlIE1lZGhhbmlhbGVtIHwg4Yqg4YiI4Yid4YqQ4Yi9IOGNleGIi-GLmyB8IOGJpuGIjCDhiJjhi7XhiJDhipLhi5PhiIjhiJ0!5e0!3m2!1sam!2set!4v1672159998917!5m2!1sam!2set" ></iframe>
                 </div>
-                <div>
+                <div class="audio_container">
                     <audio controls>
                         <source src="audio/location.ogg">
                         <track src="audio/caption.vtt" srclang="en" kind="captions" label="English" default>
                     </audio>
                 </div>
             </div>
-            <div>
+            <div class="help">
                 <h2>Help?</h2>
-                <p>This text is designed to orient customers on the idea of using the website</p>
+                <p></p>
             </div>
         </div>
     </section>
-    <footer aria-label="footer">
-      <div>
+  </div>
+  <footer aria-label="footer">
+      <div class="footer">
         <section>
-          <div>
-            <img src="Images/Icons/logo.png" alt="Logo of the website" />
+          <div class="footer__logosection">
+            <img src="Images/Icons/logo.png" alt="Logo of the website" class="footer__logofooter"/>
           </div>
         </section>
         <section>
-          <div>
-            <div>
+          <div class="socialmedias">
+            <div class="socialmedia">
               <a href="https://twitter.com/MathiJo1">
-                <img src="Images/Icons/twitter-sign.png" alt="Twitter" />
+                <img src="Images/Icons/twitter-sign.png" alt="Twitter" class="socialmedia__image" />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://www.instagram.com/prime12961/">
-                <img src="Images/Icons/instagram.png" alt="Instagram" />
+                <img src="Images/Icons/instagram.png" alt="Instagram" class="socialmedia__image"  />
               </a>
             </div>
-            <div>
+            <div class="socialmedia">
               <a href="https://t.me/JoyeJohn">
-                <img src="Images/Icons/telegram.png" alt="Telegram" />
+                <img src="Images/Icons/telegram.png" alt="Telegram" class="socialmedia__image" />
               </a>
             </div>
-            <div class="facebook_container">
+            <div class="socialmedia">
               <a href="https://www.facebook.com/johnny.1158/">
                 <img
                   src="Images/Icons/facebook-app-symbol.png"
                   alt="Facebook"
+                  class="socialmedia__image" 
                 />
               </a>
             </div>
           </div>
         </section>
         <section>
-          <div>
-            <div>
-              <div>
-                  <p>&#128222;</p>
-                  <p>+251918076769</p>
+          <div class="address">
+            <div class="address__1">
+              <div class="phone">
+                  <div><p>&#128222;</p></div>
+                  <div><p>+251918076769</p></div>
+                </a>
               </div>
-              <div>
-                <a href="https://mail.google.com/mail/u/0/#inbox">
-                  <p>&#128231;</p>
-                  <p>yohannesbekele107@gmail.com</p>
+              <div class="email">
+                <a href="https://mail.google.com/mail/u/0/#inbox" >
+                  <div class="email__container">
+                    <div><p>&#128231;</p></div>
+                    <div><p>yohannesbekele107@gmail.com</p></div>
+                  </div>
                 </a>
               </div>
             </div>
-            <div>
-              <h3>Address</h3>
+            <div class="address__2">
+              <div><h2>Address</h2></div>
               <div>
                 <p>You can in Bole, Addis Ababa, Ethiopia</p>
               </div>
             </div>
-            <nav>
+            <nav class="address__3">
               <div>
                 <ul>
                   <li>
-                    <a href="home.html">Home</a>
+                    <a href="Index.html">Home</a>
                   </li>
                   <li>
                     <a href="software_products.html">Software Products</a>
@@ -143,10 +145,12 @@
             </nav>
           </div>
         </section>
-        <div>
+        <div class="copyright">
           <p>&#169; Johnny Multiple Solutions 2022</p>
         </div>
       </div>
     </footer>
+  <script src="validation.js" defer></script>
+  <script src="navigation.js"></script>
 </body>
 </html>
